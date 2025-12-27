@@ -1,0 +1,103 @@
+.projects-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: #fcfcfc;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 128, 128, 0.1);
+}
+
+.project-content {
+    padding: 2rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.project-problem {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(0, 86, 179, 0.08);
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.project-outcome {
+    background: linear-gradient(135deg, rgba(72, 187, 120, 0.1) 0%, rgba(0, 128, 128, 0.05) 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--soft-green);
+}
+
+.outcome-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2f855a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.project-links {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+    background: #fafafa;
+}
+
+.project-link {
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--primary-teal);
+}
+
+.project-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
